@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNICOM SUPPLIES | Enterprise IT Infrastructure, Hardware & Networking Solutions</title>
+<meta name="description" content="UNICOM SUPPLIES is a premier corporate IT hardware, networking, printer consumables, and enterprise technology solution provider delivering quality, reliability, and service.">
+<meta name="keywords" content="UNICOM SUPPLIES, IT Hardware, Corporate IT Procurement, Laptops, Servers, Routers, Networking, Enterprise Infrastructure, Printers, Consumables">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="UNICOM SUPPLIES | Quality • Reliability • Service">
+<meta property="og:description" content="Premium corporate IT infrastructure, hardware procurement, enterprise networking, and managed tech services.">
+<meta property="og:image" content="unicom_supplies_logo_transparent.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UNICOM SUPPLIES">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "name": "UNICOM SUPPLIES",
+  "image": "unicom_supplies_logo_transparent.png",
+  "description": "Trusted supplier of enterprise IT hardware, computer peripherals, networking products, and printer consumables for businesses, institutions, and enterprise clients.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Business District",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "countryName": "India"
+  },
+  "telephone": "+91 00000 00000",
+  "email": "sales@unicomsupplies.com",
+  "priceRange": "$$$"
+}
+</script>
+
+<!-- Google Fonts & FontAwesome Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ==========================================================================
+   DESIGN SYSTEM & CONSTANTS (2026 Corporate Dark + White + Gold Theme)
+   ========================================================================== */
+:root {
+  --navy-deep: #030811;
+  --navy-dark: #081120;
+  --navy-main: #0B192E;
+  --navy-card: rgba(15, 28, 48, 0.7);
+  --blue-accent: #0066FF;
+  --blue-glow: rgba(0, 102, 255, 0.35);
+  --burgundy: #7A2030;
+  --burgundy-light: #A32B40;
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  --white: #FFFFFF;
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #94A3B8;
+  --slate-700: #334155;
+  --slate-900: #0F172A;
+  
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.08);
+  
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  --shadow-soft: 0 10px 30px -10px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 40px rgba(0, 102, 255, 0.2);
+  --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.2);
+  
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   BASE & RESET
+   ========================================================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--navy-deep);
+  color: var(--slate-300);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy-main);
+  border: 2px solid var(--navy-deep);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--burgundy);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul { list-style: none; }
+
+/* ==========================================================================
+   TYPOGRAPHY & UTILITIES
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60A5FA 0%, #0066FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  margin-bottom: 12px;
+  padding: 6px 16px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: var(--radius-full);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px;
+}
+
+.section-head h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+
+.section-head p {
+  font-size: 1.1rem;
+  color: var(--slate-400);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-alt {
+  background: var(--navy-dark);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* ==========================================================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ========================================================================== */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  transition: var(--transition);
+  z-index: 1;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--gold-gradient);
+  color: var(--navy-deep);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Ripple Effect */
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-anim 0.6s linear;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   LOADING ANIMATION
+   ========================================================================== */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: var(--navy-deep);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner-box {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.configure-core1, .configure-core2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+
+.configure-core1 {
+  border-top-color: var(--gold-primary);
+  animation: spin 1.2s infinite linear;
+}
+
+.configure-core2 {
+  border-bottom-color: var(--blue-accent);
+  animation: spin 0.8s infinite linear reverse;
+}
+
+.loader-text {
+  margin-top: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--white);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   GLASSMORPHISM CARD STYLES
+   ========================================================================== */
+.glass-card {
+  background: var(--navy-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: 0.8s;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 102, 255, 0.15);
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 20px 0;
+}
+
+header.scrolled {
+  background: rgba(3, 8, 17, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.brand-logo img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--slate-300);
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--gold-primary);
+  transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Nav Drawer */
+@media (max-width: 992px) {
+  .mobile-toggle { display: block; }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 360px;
+    height: 100vh;
+    background: var(--navy-dark);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 40px;
+    gap: 24px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.8);
+    transition: var(--transition);
+    border-left: 1px solid var(--glass-border);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { font-size: 1.1rem; }
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+  min-height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, rgba(11, 25, 46, 0.8) 0%, var(--navy-deep) 80%);
+  overflow: hidden;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  filter: grayscale(80%) contrast(120%);
+  z-index: 0;
+}
+
+.hero-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: var(--slate-300);
+  margin-bottom: 40px;
+  max-width: 620px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Floating Elements */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card-main {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(15, 28, 48, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6), var(--shadow-glow);
+  position: relative;
+}
+
+.hero-logo-display {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hero-logo-display img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.floating-badge {
+  position: absolute;
+  padding: 12px 20px;
+  background: rgba(8, 17, 32, 0.9);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  animation: float 4s ease-in-out infinite;
+}
+
+.badge-1 {
+  top: -20px;
+  right: -20px;
+  border-left: 3px solid var(--gold-primary);
+}
+
+.badge-2 {
+  bottom: -20px;
+  left: -20px;
+  animation-delay: -2s;
+  border-left: 3px solid var(--blue-accent);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@media (max-width: 992px) {
+  .hero-content { grid-template-columns: 1fr; text-align: center; }
+  .hero-text p { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-visual { margin-top: 40px; }
+}
+
+/* ==========================================================================
+   STATISTICS & TRUST STRIP
+   ========================================================================== */
+.trust-strip {
+  background: var(--navy-dark);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 40px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2.8rem;
+  font-family: var(--font-main);
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  color: var(--slate-400);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   ABOUT COMPANY
+   ========================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-img-main {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-img-main img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.about-experience-card {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  max-width: 220px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.about-experience-card span {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.highlight-item i {
+  color: var(--gold-primary);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-experience-card { bottom: 10px; right: 10px; }
+}
+
+/* ==========================================================================
+   WHY CHOOSE US
+   ========================================================================== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.why-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: rgba(0, 102, 255, 0.1);
+  border: 1px solid rgba(0, 102, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--blue-accent);
+  margin-bottom: 24px;
+  transition: var(--transition);
+}
+
+.glass-card:hover .why-icon {
+  background: var(--gold-primary);
+  color: var(--navy-deep);
+  border-color: var(--gold-light);
+  transform: rotateY(180deg);
+}
+
+/* ==========================================================================
+   PRODUCTS & FILTERS
+   ========================================================================== */
+.product-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  color: var(--slate-300);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--gold-gradient);
+  color: var(--navy-deep);
+  border-color: transparent;
+  box-shadow: var(--shadow-gold);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: var(--navy-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 30px rgba(0, 102, 255, 0.2);
+}
+
+.product-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.1);
+}
+
+.product-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(8, 17, 32, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.product-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.product-body p {
+  color: var(--slate-400);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 16px;
+}
+
+.btn-learn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.btn-learn:hover {
+  color: var(--white);
+  gap: 10px;
+}
+
+/* ==========================================================================
+   BRANDS WE DEAL WITH
+   ========================================================================== */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.brand-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--slate-300);
+  transition: var(--transition);
+  height: 100px;
+}
+
+.brand-card:hover {
+  background: var(--white);
+  color: var(--navy-dark);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  transform: translateY(-5px);
+}
+
+/* ==========================================================================
+   INDUSTRIES WE SERVE
+   ========================================================================== */
+.industry-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.industry-pill {
+  background: var(--navy-card);
+  border: 1px solid var(--glass-border);
+  padding: 16px 28px;
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--slate-200);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: var(--transition);
+}
+
+.industry-pill i {
+  color: var(--gold-primary);
+}
+
+.industry-pill:hover {
+  border-color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   SERVICES
+   ========================================================================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  border-left: 4px solid var(--gold-primary);
+}
+
+.service-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-card h3 i {
+  color: var(--gold-primary);
+}
+
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.testi-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testi-stars {
+  color: var(--gold-primary);
+  margin-bottom: 16px;
+}
+
+.testi-quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--slate-200);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 20px;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--burgundy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--white);
+  border: 1px solid var(--gold-primary);
+}
+
+/* ==========================================================================
+   FAQ ACCORDION
+   ========================================================================== */
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: var(--navy-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.faq-header i {
+  color: var(--gold-primary);
+  transition: var(--transition);
+}
+
+.faq-item.active .faq-header i {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+  padding: 0 24px;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  padding: 0 24px 24px;
+}
+
+/* ==========================================================================
+   CONTACT SECTION & MAP
+   ========================================================================== */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-primary);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--slate-200);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+textarea.form-input {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.map-wrap {
+  margin-top: 60px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  height: 380px;
+  box-shadow: var(--shadow-soft);
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+@media (max-width: 992px) {
+  .contact-container { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  background: var(--navy-deep);
+  border-top: 1px solid var(--glass-border);
+  padding: 80px 0 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-brand .brand-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background: var(--gold-gradient);
+  color: var(--navy-deep);
+  transform: translateY(-3px);
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: var(--white);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--gold-primary);
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  color: var(--slate-400);
+  font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+  color: var(--gold-primary);
+  padding-left: 6px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: var(--slate-400);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 576px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  color: var(--navy-deep);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-gold);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- LOADING ANIMATION -->
+<div id="loader">
+  <div class="spinner-box">
+    <div class="configure-core1"></div>
+    <div class="configure-core2"></div>
+  </div>
+  <div class="loader-text">UNICOM SUPPLIES</div>
+</div>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" aria-label="Back to Top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- HEADER / NAVIGATION -->
+<header id="header">
+  <div class="container nav-container">
+    <a href="#home" class="brand-logo" aria-label="UNICOM SUPPLIES Logo">
+      <img src="unicom_supplies_logo_transparent.png" alt="UNICOM SUPPLIES Logo">
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#brands">Brands</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary ripple-btn" style="padding: 10px 22px; font-size: 0.85rem;">
+        <span>Request Quote</span> <i class="fa-solid fa-paper-plane"></i>
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-grid-pattern"></div>
+  
+  <div class="container hero-content">
+    <div class="hero-text" data-animate>
+      <div class="eyebrow">
+        <i class="fa-solid fa-shield-halved"></i> Enterprise Technology Partner
+      </div>
+      <h1>Empowering Enterprises with <span class="text-gold">Next-Gen IT Infrastructure</span></h1>
+      <p>UNICOM SUPPLIES is your premier single-source partner for corporate hardware procurement, networking architectures, enterprise servers, and premium printer consumables.</p>
+      
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary ripple-btn">
+          <span>Explore Inventory</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-secondary ripple-btn">
+          <span>Contact Specialist</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-animate>
+      <div class="hero-card-main">
+        <div class="hero-logo-display">
+          <img src="unicom_supplies_logo_transparent.png" alt="UNICOM SUPPLIES Display Logo">
+        </div>
+        <div style="text-align: center;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Official OEM Supply Hub</h3>
+          <p style="font-size: 0.85rem; color: var(--slate-400);">Quality • Reliability • Service</p>
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="floating-badge badge-1">
+          <i class="fa-solid fa-check-circle" style="color: var(--gold-primary); font-size: 1.4rem;"></i>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem; color:#fff;">100% Genuine</div>
+            <div style="font-size:0.75rem; color:var(--slate-400);">Authorized Warranties</div>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-2">
+          <i class="fa-solid fa-truck-fast" style="color: var(--blue-accent); font-size: 1.4rem;"></i>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem; color:#fff;">Rapid Delivery</div>
+            <div style="font-size:0.75rem; color:var(--slate-400);">Nationwide Logistics</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP / STATS -->
+<div class="trust-strip" id="stats">
+  <div class="container stats-grid">
+    <div class="stat-card" data-animate>
+      <h3 class="text-gold"><span class="counter" data-target="500">0</span>+</h3>
+      <p>Corporate Clients</p>
+    </div>
+    <div class="stat-card" data-animate>
+      <h3 class="text-gradient-blue"><span class="counter" data-target="3000">0</span>+</h3>
+      <p>Products Supplied</p>
+    </div>
+    <div class="stat-card" data-animate>
+      <h3 class="text-gold"><span class="counter" data-target="15">0</span>+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-card" data-animate>
+      <h3 class="text-gradient-blue"><span class="counter" data-target="100">0</span>%</h3>
+      <p>Client Satisfaction</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT COMPANY -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-image-stack" data-animate>
+      <div class="about-img-main">
+        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1000" alt="UNICOM Corporate Operations">
+      </div>
+      <div class="about-experience-card">
+        <span>15+</span>
+        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Years of Excellence in IT Supply</div>
+      </div>
+    </div>
+
+    <div class="about-content" data-animate>
+      <div class="eyebrow">Who We Are</div>
+      <h2>Genuine Hardware. <br><span class="text-gold">Dependable Enterprise Service.</span></h2>
+      <p>UNICOM SUPPLIES is a leading corporate provider of IT hardware, networking devices, high-speed servers, computer peripherals, and printer consumables. We partner with the world's most reputable manufacturers to ensure seamlessly integrated procurement solutions.</p>
+      <p>From multinational office rollouts to educational institutions and healthcare setups, we deliver end-to-end technology solutions backed by swift delivery and expert after-sales support.</p>
+
+      <div class="about-highlights">
+        <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Authorized Tier-1 Vendor</div>
+        <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Bulk Commercial Pricing</div>
+        <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> On-Site Repair Support</div>
+        <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Tailored AMC Packages</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section-alt" id="why-choose-us">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">The UNICOM Advantage</div>
+      <h2>Why Enterprise Leaders Trust Us</h2>
+      <p>We streamline IT procurement and support so you can focus on scaling your business.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="glass-card why-card" data-animate>
+        <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+        <h3>100% Authentic Sourcing</h3>
+        <p>Direct partnerships with OEMs guarantee authentic hardware, intact manufacturer warranties, and zero grey-market risks.</p>
+      </div>
+
+      <div class="glass-card why-card" data-animate>
+        <div class="why-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+        <h3>Express Logistics</h3>
+        <p>Robust supply chains and localized warehousing ensure expedited fulfillment across standard and customized hardware configurations.</p>
+      </div>
+
+      <div class="glass-card why-card" data-animate>
+        <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Dedicated Account Support</h3>
+        <p>Every client is assigned a dedicated technical specialist for seamless orders, quotes, and rapid RMA/warranty resolution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section id="products">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Product Offerings</div>
+      <h2>Hardware & Infrastructure Portfolio</h2>
+      <p>Explore our extensive catalog of genuine IT hardware and office automation devices.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="product-filters" data-animate>
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="computing">Laptops & Workstations</button>
+      <button class="filter-btn" data-filter="printers">Printers & Consumables</button>
+      <button class="filter-btn" data-filter="networking">Networking & Servers</button>
+      <button class="filter-btn" data-filter="peripherals">Components & Peripherals</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsContainer">
+      <!-- Dynamic JS Content -->
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS WE DEAL WITH -->
+<section class="section-alt" id="brands">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Authorized Brands</div>
+      <h2>Global Manufacturers We Deal With</h2>
+      <p>Delivering quality hardware through direct relationships with industry leaders.</p>
+    </div>
+
+    <div class="brands-grid" data-animate>
+      <div class="brand-card">HP</div>
+      <div class="brand-card">DELL</div>
+      <div class="brand-card">IBM</div>
+      <div class="brand-card">COMPAQ</div>
+      <div class="brand-card">CANON</div>
+      <div class="brand-card">EPSON</div>
+      <div class="brand-card">SAMSUNG</div>
+      <div class="brand-card">SONY</div>
+      <div class="brand-card">INTEL</div>
+      <div class="brand-card">TVS</div>
+      <div class="brand-card">LENOVO</div>
+      <div class="brand-card" style="color: var(--gold-primary); font-size:1.1rem;">& MANY MORE</div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES WE SERVE -->
+<section id="industries">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Target Sectors</div>
+      <h2>Industries We Empower</h2>
+      <p>Customized IT solutions tailored to the stringent operational demands of diverse sectors.</p>
+    </div>
+
+    <div class="industry-pills" data-animate>
+      <div class="industry-pill"><i class="fa-solid fa-building"></i> Corporate Offices</div>
+      <div class="industry-pill"><i class="fa-solid fa-graduation-cap"></i> Educational Institutions</div>
+      <div class="industry-pill"><i class="fa-solid fa-hospital"></i> Hospitals & Healthcare</div>
+      <div class="industry-pill"><i class="fa-solid fa-building-columns"></i> Financial Services & Banks</div>
+      <div class="industry-pill"><i class="fa-solid fa-landmark"></i> Government Organizations</div>
+      <div class="industry-pill"><i class="fa-solid fa-cart-shopping"></i> Retail Chains</div>
+      <div class="industry-pill"><i class="fa-solid fa-industry"></i> Manufacturing Plants</div>
+      <div class="industry-pill"><i class="fa-solid fa-rocket"></i> Fast-Growing Startups</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section-alt" id="services">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Enterprise Services</div>
+      <h2>Managed IT & Technical Solutions</h2>
+      <p>End-to-end support services to ensure continuous operational uptime.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-laptop-medical"></i> Multi-Brand Laptop Repair</h3>
+        <p>Comprehensive chip-level diagnosis, display replacement, and motherboard repair for all enterprise laptop brands.</p>
+      </div>
+
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-desktop"></i> Workstation Maintenance</h3>
+        <p>Hardware upgrades, OS deployment, and performance optimization for commercial desktop fleets.</p>
+      </div>
+
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-network-wired"></i> Network Infrastructure Setup</h3>
+        <p>Structured CAT6/Fiber cabling, rack installation, router/switch configuration, and security firewall deployment.</p>
+      </div>
+
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-print"></i> Managed Print Services</h3>
+        <p>Fleet printer installation, cartridge inventory management, and preventative maintenance for offices.</p>
+      </div>
+
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-file-contract"></i> Annual Maintenance Contracts (AMC)</h3>
+        <p>SLA-backed recurring maintenance programs ensuring fast response times and zero unexpected downtime.</p>
+      </div>
+
+      <div class="glass-card service-card" data-animate>
+        <h3><i class="fa-solid fa-box-archive"></i> Corporate IT Procurement</h3>
+        <p>Bulk hardware purchasing consulting, customized OEM ordering, and streamlined institutional supply workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Client Validation</div>
+      <h2>What Procurement Leaders Say</h2>
+      <p>Building long-term business relationships through reliable execution and authentic supply.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="glass-card testi-card" data-animate>
+        <div>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"UNICOM SUPPLIES has been our primary hardware vendor for 4+ years. Their response time for enterprise network switches and genuine toner cartridges is unrivaled."</p>
+        </div>
+        <div class="testi-author">
+          <div class="author-avatar">RM</div>
+          <div class="author-info">
+            <h4>Rahul Mehta</h4>
+            <p>IT Infrastructure Manager</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card testi-card" data-animate>
+        <div>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"Deploying 150+ laptops across our educational campus was seamless thanks to UNICOM. Competitive B2B pricing and flawless warranty support."</p>
+        </div>
+        <div class="testi-author">
+          <div class="author-avatar">SR</div>
+          <div class="author-info">
+            <h4>Sunita Rao</h4>
+            <p>Admin Director, Academic Trust</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card testi-card" data-animate>
+        <div>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"Their Annual Maintenance Contract (AMC) keeps our hospital servers and workstations running without interruption. Highly recommended tech partner."</p>
+        </div>
+        <div class="testi-author">
+          <div class="author-avatar">AK</div>
+          <div class="author-info">
+            <h4>Anil Kapoor</h4>
+            <p>Facilities Lead, Healthcare Network</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREQUENTLY ASKED QUESTIONS -->
+<section class="section-alt" id="faq">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Clear Answers</div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about placing orders and procuring through UNICOM SUPPLIES.</p>
+    </div>
+
+    <div class="faq-accordion" data-animate>
+      <div class="faq-item">
+        <div class="faq-header">
+          <span>Are all products supplied by UNICOM 100% genuine and under warranty?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Every single item supplied—from laptops to printer cartridges—is sourced directly through authorized OEM channels. All products carry standard official manufacturer warranties.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span>Do you support bulk B2B and institutional procurement?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-content">
+          <p>Absolutely. We specialize in corporate IT procurement for companies, schools, hospitals, and government bodies, offering tiered bulk pricing, custom billing, and dedicated account managers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span>Do you provide nationwide shipping and delivery?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-content">
+          <p>Yes. We partner with leading logistics providers to ensure fast, insured shipment of critical hardware, switches, servers, and accessories right to your facility.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span>What IT maintenance and repair services do you offer?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-content">
+          <p>We provide on-site hardware troubleshooting, structured network cabling, laptop chip-level repairs, printer fleet servicing, and customized Annual Maintenance Contracts (AMC).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span>How quickly can I receive a customized RFQ quote?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-content">
+          <p>Upon submitting your requirement via our contact form or email, our sales team typically returns a formal quotation within 1 business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION & MAP -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Connect with Our Tech Specialists</h2>
+      <p>Submit your requirements or RFQ details below and our team will get back to you promptly.</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-details" data-animate>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-text">
+            <h4>Head Office Address</h4>
+            <p>UNICOM SUPPLIES, Business District, Bengaluru, Karnataka, India</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-text">
+            <h4>Phone Inquiry</h4>
+            <p>+91 00000 00000 / +91 00000 00001</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-text">
+            <h4>Email Inquiry</h4>
+            <p>sales@unicomsupplies.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="contact-text">
+            <h4>Business Hours</h4>
+            <p>Monday – Saturday: 9:30 AM – 6:30 PM (IST)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" data-animate>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" class="form-input" placeholder="e.g. John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" class="form-input" placeholder="john@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Requirement Details</label>
+            <textarea id="message" class="form-input" placeholder="Specify laptops, printers, networking hardware, or RFQ details..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary ripple-btn" style="width: 100%;">
+            <span>Submit RFQ / Inquiry</span> <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map Placeholder -->
+    <div class="map-wrap" data-animate>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d77.49085233324612!3d12.953959988118023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <img src="unicom_supplies_logo_transparent.png" alt="UNICOM SUPPLIES Logo">
+        </a>
+        <p>Your trusted enterprise partner for authentic IT hardware, corporate infrastructure, networking gear, and printer consumables.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#brands">Partner Brands</a></li>
+          <li><a href="#services">IT Services</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Top Categories</h4>
+        <ul>
+          <li><a href="#products">Enterprise Laptops</a></li>
+          <li><a href="#products">Network Switches</a></li>
+          <li><a href="#products">Printer Cartridges</a></li>
+          <li><a href="#products">Monitors & Displays</a></li>
+          <li><a href="#products">UPS Power Systems</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p style="font-size: 0.85rem; color: var(--slate-400); margin-bottom: 12px;">UNICOM SUPPLIES, Business District, Bengaluru, Karnataka, India</p>
+        <p style="font-size: 0.85rem; color: var(--gold-primary); font-weight: 600;">Sales Hotline:</p>
+        <p style="font-size: 0.95rem; color: #fff; margin-bottom: 12px;">+91 00000 00000</p>
+        <p style="font-size: 0.85rem; color: var(--gold-primary); font-weight: 600;">Official Email:</p>
+        <p style="font-size: 0.85rem; color: #fff;">sales@unicomsupplies.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year">2026</span> UNICOM SUPPLIES. All Rights Reserved.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Supply</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// ALL PRODUCT DATA WITH HIGH-QUALITY UNSPLASH HARDWARE PLACEHOLDERS
+const productsData = [
+  {
+    name: "HP Enterprise Laptops",
+    cat: "computing",
+    tag: "HP Authorized",
+    desc: "EliteBook & ProBook series powered for extreme performance, security, and mobility.",
+    img: "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Dell Workstation Laptops",
+    cat: "computing",
+    tag: "Dell Commercial",
+    desc: "Precision & Latitude laptops engineered for heavy corporate computing workflows.",
+    img: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Canon Enterprise Printers",
+    cat: "printers",
+    tag: "Canon Official",
+    desc: "High-speed laser and multi-function printer solutions for heavy daily office output.",
+    img: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Epson InkTank Printers",
+    cat: "printers",
+    tag: "Epson OEM",
+    desc: "EcoTank color and monochrome printers delivering low cost-per-page operation.",
+    img: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Samsung Ultra-Wide Monitors",
+    cat: "peripherals",
+    tag: "Samsung Display",
+    desc: "Ergonomic 4K and curved workspace monitors designed for maximum multi-tasking.",
+    img: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Intel Xeon & Core Processors",
+    cat: "peripherals",
+    tag: "Intel Genuine",
+    desc: "High-performance multi-core processors for servers, desktops, and data stations.",
+    img: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Enterprise WiFi Routers",
+    cat: "networking",
+    tag: "High Bandwidth",
+    desc: "Dual & Tri-band WiFi 6/6E routers for ultra-fast, multi-device office connectivity.",
+    img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Managed Network Switches",
+    cat: "networking",
+    tag: "Gigabit PoE+",
+    desc: "Rackmountable 24/48 port PoE switches built for seamless network expansion.",
+    img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Enterprise NVMe SSDs",
+    cat: "peripherals",
+    tag: "High Speed Storage",
+    desc: "Ultra-fast PCIe Gen4 NVMe internal drives for workstations and enterprise storage.",
+    img: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Server Hard Disks (HDD)",
+    cat: "peripherals",
+    tag: "Data Center Grade",
+    desc: "High-capacity SAS & SATA hard drives designed for 24/7 continuous server operation.",
+    img: "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Ergonomic Wireless Mice",
+    cat: "peripherals",
+    tag: "Precision Gear",
+    desc: "Precision optical mice designed for all-day comfort and silent tactile response.",
+    img: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Mechanical Keyboards",
+    cat: "peripherals",
+    tag: "Office Peripherals",
+    desc: "Durable mechanical and membrane office keyboards for high-speed typing efficiency.",
+    img: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Commercial UPS Systems",
+    cat: "computing",
+    tag: "Power Protection",
+    desc: "Line-interactive & online UPS power backup systems for critical servers and PCs.",
+    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Conference Room Solutions",
+    cat: "peripherals",
+    tag: "Audio / Video",
+    desc: "Complete 4K webcams, omnidirectional speakerphones, and meeting room hubs.",
+    img: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Structured Cable Infrastructure",
+    cat: "networking",
+    tag: "CAT6 & Fiber",
+    desc: "Shielded CAT6 cables, patch cords, patch panels, and optical fiber interconnects.",
+    img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    name: "Printer Toners & Cartridges",
+    cat: "printers",
+    tag: "100% Genuine OEM",
+    desc: "Genuine HP, Canon, Epson, and Brother ink cartridges and laser toner supplies.",
+    img: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&q=80&w=600"
+  }
+];
+
+// RENDER PRODUCTS
+function renderProducts(filter = "all") {
+  const container = document.getElementById('productsContainer');
+  container.innerHTML = '';
+
+  const filtered = filter === "all" ? productsData : productsData.filter(p => p.cat === filter);
+
+  filtered.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.setAttribute('data-animate', '');
+    card.innerHTML = `
+      <div class="product-img-wrap">
+        <span class="product-tag">${p.tag}</span>
+        <img src="${p.img}" alt="${p.name}" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <div class="product-footer">
+          <a href="#contact" class="btn-learn">Request Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  initObserver();
+}
+
+// FILTER HANDLERS
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderProducts(btn.dataset.filter);
+  });
+});
+
+// INITIAL LOADER & COUNTERS
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 400);
+
+  renderProducts();
+  initCounters();
+});
+
+// SCROLL HEADER & BACK TO TOP
+const header = document.getElementById('header');
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+
+  if (window.scrollY > 400) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// MOBILE MENU TOGGLE
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+mobileToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  const icon = mobileToggle.querySelector('i');
+  if (navLinks.classList.contains('open')) {
+    icon.className = 'fa-solid fa-xmark';
+  } else {
+    icon.className = 'fa-solid fa-bars';
+  }
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    mobileToggle.querySelector('i').className = 'fa-solid fa-bars';
+  });
+});
+
+// FAQ ACCORDION
+document.querySelectorAll('.faq-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const faqItem = header.parentElement;
+    const isActive = faqItem.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+
+    if (!isActive) {
+      faqItem.classList.add('active');
+    }
+  });
+});
+
+// COUNTER ANIMATION
+function initCounters() {
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200;
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+}
+
+// SCROLL ANIMATIONS
+function initObserver() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+}
+
+// RIPPLE EFFECT
+document.addEventListener('click', function (e) {
+  if (e.target.closest('.ripple-btn')) {
+    const btn = e.target.closest('.ripple-btn');
+    const circle = document.createElement('span');
+    const diameter = Math.max(btn.clientWidth, btn.clientHeight);
+    const radius = diameter / 2;
+
+    const rect = btn.getBoundingClientRect();
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${e.clientX - rect.left - radius}px`;
+    circle.style.top = `${e.clientY - rect.top - radius}px`;
+    circle.classList.add('ripple');
+
+    const ripple = btn.querySelector('.ripple');
+    if (ripple) {
+      ripple.remove();
+    }
+
+    btn.appendChild(circle);
+  }
+});
+
+// FORM SUBMISSION
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Thank you! Your inquiry has been submitted successfully to UNICOM SUPPLIES.');
+  e.target.reset();
+});
+
+// DYNAMIC YEAR
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
